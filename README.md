@@ -15,7 +15,7 @@ Da biste pokrenuli ovu aplikaciju, na vašem računaru morate imati instaliran *
 3. **Pokrenite program** unosom sledeće komande:
 
 ```bash
-python main.py
+python chatroom.py
 ```
-*(Napomena: Zamenite `main.py` stvarnim imenom glavnog fajla vaše aplikacije ukoliko se zove drugačije).*
+
 
