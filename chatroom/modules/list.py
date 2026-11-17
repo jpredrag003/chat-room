@@ -1,9 +1,12 @@
-# modules/list.py
-def list_users(self):
-    """Prikazuje sve korisnike i njihove boje."""
-    print("\n📋 Users in chat:")
-    for user in self.users_joined:
-        color = self.user_colors[user]
-        reset = "\033[0m"
-        print(f"- {color}{user}{reset}")
-    print("-"*50)
+"""Modul za upravljanje i prikaz liste aktivnih korisnika."""
+
+
+def display_user_list(users: list) -> None:
+  """Prikazuje list trenutno povezanih korisnika."""
+  print("\n--- Aktivni korisnici ---")
+  if not users:
+    print("Nema drugih korisnika na mreži.")
+  else:
+    for idx, user in enumerate(users, 1):
+      print(f"{idx}. {user}")
+  print("-" * 25)
